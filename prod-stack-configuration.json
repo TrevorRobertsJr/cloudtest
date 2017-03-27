@@ -1,0 +1,9 @@
+{
+  "Parameters" : {
+    "DBName" : "ProdWordPressDB",
+    "DBPassword" : "MyPasswordRocks",
+    "DBRootPassword" : "MyPasswordRocks",
+    "DBUser" : "ProdDBuser",    
+    "KeyName" : "work-keypair"
+  }
+}

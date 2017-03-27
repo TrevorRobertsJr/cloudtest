@@ -1,0 +1,9 @@
+{
+  "Parameters" : {
+    "DBName" : "TestWordPressDB",
+    "DBPassword" : "MyPasswordRocks",
+    "DBRootPassword" : "MyPasswordRocks",
+    "DBUser" : "TestDBuser",    
+    "KeyName" : "work-keypair"
+  }
+}
