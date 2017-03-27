@@ -484,13 +484,17 @@ Resources:
       GroupDescription: "Enable HTTP access via port 80 locked down to the load balancer + SSH access"
       SecurityGroupIngress:
       - CidrIp: 0.0.0.0/0
-        FromPort: '81'
+        FromPort: '80'
         IpProtocol: tcp
-        ToPort: '81'
+        ToPort: '80'
       - CidrIp: !Ref SSHLocation
         FromPort: '22'
         IpProtocol: tcp
         ToPort: '22'
+      - CidrIp: 0.0.0.0/0
+        FromPort: '443'
+        IpProtocol: tcp
+        ToPort: '443'
 Outputs:
   PublicIP:
     Description: EC2 public IP
